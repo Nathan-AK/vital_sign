@@ -1,0 +1,36 @@
+{
+    "model": "RandomForestClassifier",
+    "features": [
+        "heart_rate",
+        "skin_temp",
+        "motion_level"
+    ],
+    "target": "target",
+    "classes": {
+        "0": "Non-stress",
+        "1": "Stress"
+    },
+    "train_subjects": [
+        "S2",
+        "S3",
+        "S4",
+        "S10",
+        "S11",
+        "S13",
+        "S14",
+        "S15"
+    ],
+    "test_subjects": [
+        "S16",
+        "S17"
+    ],
+    "training_samples": 747,
+    "testing_samples": 190,
+    "metrics": {
+        "accuracy": 0.8894736842105263,
+        "precision": 0.7068965517241379,
+        "recall": 0.9111111111111111,
+        "f1_score": 0.7961165048543689,
+        "roc_auc": 0.9454406130268199
+    }
+}

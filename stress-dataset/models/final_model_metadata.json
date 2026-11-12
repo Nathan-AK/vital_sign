@@ -1,0 +1,43 @@
+{
+    "model_name": "Random Forest",
+    "dataset": "WESAD",
+    "samples": 937,
+    "subjects": [
+        "S10",
+        "S11",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S2",
+        "S3",
+        "S4"
+    ],
+    "features": [
+        "heart_rate",
+        "skin_temp",
+        "motion_level"
+    ],
+    "target": "target",
+    "classes": {
+        "0": "Non-stress",
+        "1": "Stress"
+    },
+    "parameters": {
+        "n_estimators": 300,
+        "min_samples_split": 4,
+        "min_samples_leaf": 2,
+        "class_weight": "balanced",
+        "random_state": 42
+    },
+    "training_date": "2026-11-09T13:58:23.535667",
+    "evaluation_reference": {
+        "method": "Leave-One-Subject-Out",
+        "accuracy": 0.8442,
+        "precision": 0.6245,
+        "recall": 0.7725,
+        "f1_score": 0.6907,
+        "roc_auc": 0.8845
+    }
+}
